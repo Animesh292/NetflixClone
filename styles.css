@@ -1,0 +1,317 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: border-box;
+}
+
+html {
+  background-color: black;
+  color: white;
+}
+
+
+.Home-Page {
+  /* background-image: url(); */
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0.4) 60%, rgba(0, 0, 0, 1) 100%), url("images/netflix main_img.jpg");
+  background-size: cover;
+  height: 700px;
+  border-bottom: 8px solid rgb(35, 36, 35);
+}
+
+/* navbar */
+.navbar {
+  height: 90px;
+  /* border: 1px solid white; */
+  display: flex;
+  /* justify-content: space-evenly; */
+  align-items: center;
+  animation: button;
+}
+
+.netflix-logo {
+  background-image: url("images/Netflix-Brand-Logo.png");
+  background-size: cover;
+  height: 120px;
+  width: 180px;
+  margin-right: 48vw;
+  margin-left: 148px;
+}
+
+.nav-Language {
+  color: white;
+  width: 120px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  border: 0.5px solid white;
+  border-radius: 4px;
+}
+
+.globe-icon{
+  padding: 4px 10px;
+  /* display: inline; */
+}
+
+select {
+  background-color: none;
+  font-size: 1rem;
+  border: none;
+  color: white;
+  background-color: inherit;
+  text-decoration: inherit;
+}
+
+.nav-signin button {
+  background-color: rgb(229, 9, 20);
+  color: rgb(255, 255, 255);
+  border-radius: 4px;
+  border: none;
+  font-size: 0.95rem;
+  font-weight: 500;
+  padding: 6px 14px;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.nav-signin button:hover {
+  animation-name: btnstatechange;
+  animation-duration: 500ms;
+  background-color: #bf2f24;
+}
+
+/* @keyframes btnstatechange {
+  100% { background-color: #bf2f24};
+} */
+
+/* MainBody */
+.Main-Body {
+  color: white;
+  /* position: absolute;
+  top: 40%;
+  left: 30%; */
+  text-align: center;
+  font-family: sans-serif;
+  margin-top: 28vh;
+  margin-left: 11.8vw;
+  display: inline-block;
+  text-align: center;
+  width: 900px;
+}
+
+.Main-Body h1{
+  font-size: 2.6rem;
+  font-weight: 900;
+  line-height: 2;
+  display: inline-block;
+  height: 78px;
+  width: 1072px;
+}
+
+.Main-Body p{
+  margin-top: 16px;
+  margin-left: 12vw;
+  font-size: 1.5rem;
+  font-weight: 300;
+  line-height: 2.2rem;
+  /* width: 900px; */
+}
+
+.Main-Body h3 {
+  font-size: 1.3em;
+  font-weight: 400;
+  line-height: 1.9rem;
+  margin-top: 22px;
+  margin-left: 14vw;
+}
+
+/* Input Area */
+
+.input-Area {
+  margin-top: 18px;
+  margin-left: 10vw;
+  display: flex;
+  justify-content: center;
+}
+
+.input-Area input {
+  padding: 18px 18px 18px;
+  background-color: rgb(35, 36, 35, 0.8);
+  color: inherit;
+  width: 376px;
+  border: 1px solid grey;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: bolder;
+  margin-left: 60px;
+  cursor: pointer;
+}
+
+.input-Area input:hover {
+  border: 2px solid white;
+}
+
+.input-Area button {
+  background-color: rgb(229, 9, 20);
+  color: white;
+  width:180px;
+  padding: 12px 10px;
+  border: none;
+  border-radius: 4px;
+  margin-left: 8px;
+  font-size: 1.4rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.input-Area button:hover {
+  background-color: #bf2f24;
+}
+
+/* Tv Section */
+.tv-section {
+  /* background-color: black; */
+  height: 385px;
+  width: 100%;
+  padding: 72px 0;
+  border-bottom: 8px solid rgb(35, 36, 35);
+  /* z-index: 0; */
+}
+
+.content-box {
+  margin: 0 160px;
+  font-family: sans-serif;
+  display: flex;
+  align-items: center;
+}
+
+.desc {
+  display: flex;
+  flex-direction: column;
+  width: 514px;
+}
+
+.desc h2 {
+  color: white;
+  font-size: 3rem;
+  font-weight: 900;
+}
+
+.desc p {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-top: 16px;
+}
+
+.tv-img {
+  background-image: url("images/tv.png");
+  background-size: cover;
+  width: 508px;
+  height: 381px;
+  position: relative;
+}
+
+.tv-img video {
+  position: absolute;
+  left: 64px;
+  top: -10px;
+  width: 410px;
+  height: 388px;
+  z-index: -1;
+}
+.tv-img2 {
+  background-image: url("images/device-pile-in.png");
+  background-size: cover;
+  width: 508px;
+  height: 381px;
+  position: relative;
+}
+
+.tv-img2 video {
+  position: absolute;
+  left: 94px;
+  top: -60px;
+  width: 310px;
+  height: 388px;
+  z-index: -1;
+}
+
+/* Phn section */
+
+.phn-img {
+  background-image: url("images/mobile.jpg");
+  background-size: cover;
+  height: 381px;
+  width: 508px;
+}
+
+.desc1 {
+  display: flex;
+  flex-direction: column;
+  width: 514px;
+  padding-left: 6px;
+}
+
+.desc1 h2 {
+  color: white;
+  font-size: 3rem;
+  font-weight: 900;
+}
+
+.desc1 p {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-top: 16px;
+}
+
+/* childrens-section */
+
+.childrens-img {
+  background-image: url("images/childrens.png");
+  background-size: cover;
+  height: 381px;
+  width: 508px;
+}
+
+/* footer */
+footer {
+  height: 463px;
+  font-family: sans-serif;
+}
+
+.footer-panel {
+  padding: 60px 0px;
+  margin: 0 160px;
+  text-decoration: none;
+}
+
+.footer-panel1 {
+  padding: 12px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.footer-panel1 ul {
+  color: #ffffffb3;
+  list-style-type: none;
+}
+
+.footer-panel1 ul li a {
+    color: #ffffffb3;
+    font-size: 0.9rem;
+}
+
+.footer-panel1 ul li {
+  margin-top: 16px;
+}
+
+.Callus {
+  font-size: 1rem;
+  color: #ffffffb3;
+  padding: 12px 0px;
+  font-weight: 300;
+}
+
+.Callus a {
+  color: #ffffffb3;
+}
